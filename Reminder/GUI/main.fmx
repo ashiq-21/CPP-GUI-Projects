@@ -1,0 +1,54 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Reminder'
+  ClientHeight = 380
+  ClientWidth = 540
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object reminderDate: TDateEdit
+    Date = 45504.000000000000000000
+    Position.X = 136.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object reminderTime: TTimeEdit
+    Time = 0.795424502314814800
+    Position.X = 136.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object reminderButton: TButton
+    Position.X = 136.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Set Reminder'
+    TextSettings.Trimming = None
+    OnClick = reminderButtonClick
+  end
+  object Label1: TLabel
+    Position.X = 136.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Add Reminder'
+    TabOrder = 4
+  end
+  object reminderTimer: TTimer
+    OnTimer = reminderTimerTimer
+    Left = 392
+    Top = 264
+  end
+end
