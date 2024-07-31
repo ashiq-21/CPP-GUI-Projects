@@ -1,0 +1,141 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'main'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object b1: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b2: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b3: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b6: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b5: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b4: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b9: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 265.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b8: TButton
+    Position.X = 248.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object b7: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    TextSettings.Trimming = None
+    OnClick = ButtonClick
+  end
+  object Label1: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 40.000000000000000000
+    Text = 'CurrentSymbol'
+    TabOrder = 9
+  end
+  object symbolLabel: TLabel
+    Position.X = 248.000000000000000000
+    Position.Y = 40.000000000000000000
+    Text = 'Label3'
+    TabOrder = 10
+  end
+  object winLabel: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 353.000000000000000000
+    TabOrder = 11
+  end
+  object resetButton: TButton
+    Opacity = 0.000000000000000000
+    Position.X = 360.000000000000000000
+    Position.Y = 383.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Play Again'
+    TextSettings.Trimming = None
+    OnClick = resetButtonClick
+  end
+  object resetButton2: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 378.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'Reset Board'
+    TextSettings.Trimming = None
+    OnClick = resetButtonClick
+  end
+end
