@@ -28,6 +28,10 @@ void __fastcall TregistrationForm::submitButtonClick(TObject *Sender)
 		AnsiString password = passwordValue->Text;
 		myFile << name << " " << age << " " << username << " " << password << "\n";
 		myFile.close();
+		nameValue->Text = "";
+		ageValue->Text = "";
+		usernameValue->Text = "";
+		passwordValue->Text = "";
 		this->Close();
 	}
 }
