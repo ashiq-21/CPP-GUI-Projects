@@ -13,6 +13,10 @@ TregistrationForm *registrationForm;
 __fastcall TregistrationForm::TregistrationForm(TComponent* Owner)
 	: TForm(Owner)
 {
+	   nameValue->Text="";
+	   ageValue->Text="";
+	   usernameValue->Text="";
+	   passwordValue->Text="";
 }
 //---------------------------------------------------------------------------
 
