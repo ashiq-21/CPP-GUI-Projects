@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
 #include <fmx.h>
-#include<fstream>
+#include <fstream>
 #pragma hdrstop
 
 #include "Registration.h"
@@ -10,31 +10,25 @@
 #pragma resource "*.fmx"
 TregistrationForm *registrationForm;
 //---------------------------------------------------------------------------
-__fastcall TregistrationForm::TregistrationForm(TComponent* Owner)
+__fastcall TregistrationForm::TregistrationForm(TComponent *Owner)
 	: TForm(Owner)
 {
-	   nameValue->Text="";
-	   ageValue->Text="";
-	   usernameValue->Text="";
-	   passwordValue->Text="";
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TregistrationForm::submitButtonClick(TObject *Sender)
 {
-   fstream myFile;
-   myFile.open("registeredUsers.txt",ios::app);
-   if(myFile.is_open())
-   {
-	   AnsiString name = nameValue->Text;
-	   AnsiString age = ageValue->Text;
-	   AnsiString username = usernameValue->Text;
-	   AnsiString password = passwordValue->Text;
-	   myFile<<name<<" "<<age<<" "<<username<<" "<<password<<"\n";
-	   myFile.close();
-       this->Close();
-   }
-
+	fstream myFile;
+	myFile.open("registeredUsers.txt", ios::app);
+	if (myFile.is_open())
+	{
+		AnsiString name = nameValue->Text;
+		AnsiString age = ageValue->Text;
+		AnsiString username = usernameValue->Text;
+		AnsiString password = passwordValue->Text;
+		myFile << name << " " << age << " " << username << " " << password << "\n";
+		myFile.close();
+		this->Close();
+	}
 }
 //---------------------------------------------------------------------------
-
